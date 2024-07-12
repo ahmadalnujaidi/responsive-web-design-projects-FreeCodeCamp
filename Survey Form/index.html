@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">We would love to hear your thoughts and feedback!</p>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age:</label>
+        <input type="number" id="number" name="number" min="10" max="100" placeholder="Enter your age">
+      </div>
+      <div class="form-group">
+        <label for="dropdown">Favorite subject:</label>
+        <select id="dropdown" name="dropdown">
+          <option value="math">Math</option>
+          <option value="science">Science</option>
+          <option value="history">History</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Preferred contact method:</p>
+        <label><input type="radio" name="contact" value="email" checked>Email</label>
+        <label><input type="radio" name="contact" value="phone">Phone</label>
+      </div>
+      <div class="form-group">
+        <p>Hobbies:</p>
+        <label><input type="checkbox" name="hobbies" value="reading">Reading</label>
+        <label><input type="checkbox" name="hobbies" value="traveling">Traveling</label>
+        <label><input type="checkbox" name="hobbies" value="sports">Sports</label>
+      </div>
+      <div class="form-group">
+        <label for="comments">Additional comments:</label>
+        <textarea id="comments" name="comments" placeholder="Enter your comments here"></textarea>
+      </div>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
